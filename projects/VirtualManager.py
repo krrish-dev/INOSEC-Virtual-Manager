@@ -282,7 +282,7 @@ def amazon(product):
         speak("could not perform a operation")
 
 # telling meanings
-# it use nltk library to find the meaning of world
+# it use nltk library to find the meaning of words
 def mean(word):
     try:
         syns = wordnet.synsets(word)
