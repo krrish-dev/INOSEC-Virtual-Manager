@@ -1,0 +1,33 @@
+
+Open the terminal download the following python library||
+It is necessary to download otherwise program will not work
+
+
+$ pip install webbrowser
+
+
+$ pip install chatterbot
+$ pip install chatterbot_corpus
+
+
+$ pip install speech recognition
+
+
+$ pip install pyttsx3
+
+
+$ pip install wekipedia
+
+
+$ pip install nltk
+
+$ python3
+
+then in python terminal type following commands
+
+>>>import nltk
+>>>nltk.download('wordnet')
+
+it will download wordnet on your system
+
+If you have any problem regarding to download the packages or it's working, check solution of issues on stackoverflow.
