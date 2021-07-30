@@ -4,8 +4,12 @@ This program is fully created on python language so python is necessary if you w
 
 it is a virtual manager that works on your speech, makes you free you form hand work as much as possible,
 
-Some commands on which it works-
 
+Inside your terminal
+$ python3 VM.py
+
+
+Some commands on which it works-
 #########################################
 
 'open facebook' | it will open up your facebook account for your browser
