@@ -228,7 +228,6 @@ def g_link(query):
 def g_serch():
     try:
         g = str(g_link(atul_speak()))
-        print(g)
         webbrowser.open("https://www.google.com/search?q=" + g)
     except:
         speak("cannot able to perform system operation")
@@ -252,7 +251,6 @@ def s_link(query):
 def s_serch():
     try:
         g = str(s_link(atul_speak()))
-        print(g)
         webbrowser.open("https://soundcloud.com/search?q=" + g)
     except:
         speak("cannot able to perform system operation")
