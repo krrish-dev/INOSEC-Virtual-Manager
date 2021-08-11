@@ -13,6 +13,7 @@ from nltk.corpus import wordnet
 import speech_recognition as sr
 import wikipedia
 import pyttsx3
+import feedparser
 import webbrowser
 import sys
 import time
@@ -191,38 +192,22 @@ def commands():
             speak("name of your product")
             amazon(atul_speak())
         elif 'news' in atul_lis:
-            speak("tell me the name of your country of say international")
-            nynews(atul_speak().lower())
+            ne()
         else:
             chat_talk(atul_speak())
             continue
 
 
-#algo of visiting news website - "NeyYork Times"
-def typ(types):
-    type_list = ["sports", "tech", "service", "health", "arts", "books", "style", "food", "travel", "mazagine", "politics", "business"]
-    if types in type_list:
-        link_sort = types
-        link = "https://www.nytimes.com/international/section/" + link_sort
-        webbrowser.open(link)
-    elif types == 'nope':
-        link = 'https://www.nytimes.com/international/'
-        webbrowser.open(link)
-    else:
-        text = "section doesn't match, current term of news not avaliable"
-        text1 = "select in these options\n" + str(type_list)
-        speak(text)
-        print(text1)
-        return typ(atul_speak().lower())
-
-
-def nynews(loc):
-    if loc == "international":
-        speak("what section of news you want to see")
-        typ(atul_speak().lower())
-    else:
-        lin = "https://www.nytimes.com/" + loc
-        webbrowser.open(lin)
+#algo of show news content
+def ne():
+    text = "todays news"
+    speak(text)
+    nf = feedparser.parse("https://rss.nytimes.com/services/xml/rss/nyt/World.xml")
+    for i in range(1, 10):
+        new_f = nf.entries[i]
+        news = new_f.summary
+        print(news, '\n')
+        speak(news)
 
 #algo for searching on web [google.com]
 def g_link(query):
@@ -282,7 +267,7 @@ def amazon(product):
         speak("could not perform a operation")
 
 # telling meanings
-# it use nltk library to find the meaning of words
+# it use nltk library to find the meaning of world
 def mean(word):
     try:
         syns = wordnet.synsets(word)
