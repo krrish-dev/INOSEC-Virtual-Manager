@@ -2,16 +2,18 @@
 
 This program is fully created on python language so python is necessary if you want to use it,
 
-it is a virtual manager that works on your speech, makes you free you form hand work as much as possible,
+it is a virtual manager that works on your speech, makes you free form hand work as much as possible,
 
 
-Inside your terminal
+Inside your terminal type this after selecting desired location where you had save the .py file
+
 $ python3 VM.py
+
 
 Version -- 0.0.4
 
-
 Some commands on which it works-
+
 #########################################
 
 'open facebook' | it will open up your facebook account for your browser
