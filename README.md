@@ -8,6 +8,8 @@ it is a virtual manager that works on your speech, makes you free you form hand 
 Inside your terminal
 $ python3 VM.py
 
+Version -- 0.0.4
+
 
 Some commands on which it works-
 #########################################
@@ -43,6 +45,10 @@ Some commands on which it works-
 'search on internet' | it will ask you your query and then search ot on google using your webbrowser
 
 'search for wekipedia' | it will ask you your query and then it will speak a desired result
+
+'disable wifi' | it will automatically disable wifi
+
+'remember my words' | it will save your given words in remember.txt file that you can see in future, the fill will be present where you had save the program [in project folder]
 
 'please be silent' | it will stop taking voice commands to avoid disturbance in your work, press enter continue
 
