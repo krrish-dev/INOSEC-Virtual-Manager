@@ -13,7 +13,6 @@ but you can remove that from your code if you are highly concern about the secur
 
 
 IF YOU WANT TO KEEP YOUR PRIVACY SAFE FROM GOOGLE, USE SYSTEM PROXY OR VPN SERVICES 
-
 BUT MAKE SURE YOU HAVE A TRUST ON THOSE SERVICES WHICH YOU ARE GOING TO USE.
 
 
