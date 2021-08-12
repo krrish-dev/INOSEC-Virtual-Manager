@@ -88,7 +88,7 @@ def chat_talk(req):
 #voice creating engine
 def speak(audio):
     atul_s = pyttsx3.init()
-    atul_s.setProperty('voice', 'english_rp+f4') # voice id[currently female voice], change 'f4' to 'f6' to make a male voice
+    atul_s.setProperty('voice', 'english_rp+f5') # voice id[currently female voice], change 'f4' to 'f6' to make a male voice
     atul_s.setProperty("rate", 140)
     atul_s.say(audio)
     atul_s.runAndWait()
@@ -193,10 +193,31 @@ def commands():
             amazon(atul_speak())
         elif 'news' in atul_lis:
             ne()
+        elif 'disable wifi' in atul_lis:
+            speak("are you sure about it, the program will stoped working")
+            c = atul_speak().lower()
+            if c == 'yes':
+                command = 'nlmic radio wifi off'
+                os.system(command)
+            else:
+                speak("try again")
+        elif 'remember' in atul_lis:
+            rem()
         else:
             chat_talk(atul_speak())
             continue
 
+
+#reminder file
+def rem():
+    text = "plese tell your call"
+    speak(text)
+    tex = atul_speak()
+    f = open("remeber.txt", "a")
+    f.write("\n\n--------------------------------------------\n")
+    f.write(tex)
+    f.close()
+    speak("text saved")
 
 #algo of show news content
 def ne():
@@ -254,7 +275,6 @@ def s_serch():
         webbrowser.open("https://soundcloud.com/search?q=" + g)
     except:
         speak("cannot able to perform system operation")
-
 
 #amazon algo- "amazon.com"
 def amazon(product):
