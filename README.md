@@ -32,11 +32,7 @@ Some commands on which it works-
 
 'show me amazon product' | it will ask you your product and then it will open up amazon website with desired product
 
-'about news' | it ask you your country name but if you choose 'internationl' it will again ask you a section then it 
-will open up New York Times
-             -/ sections on international news
-                ["sports", "tech", "service", "health", "arts", "books", "style", "food", "travel", "mazagine",                       "politics", "business"]
-                or if you choose 'nope' it will open all the international news
+'todays news' | it will present you a 10 top most international news
 
 'what is the time' | it will tell you a current time
 
