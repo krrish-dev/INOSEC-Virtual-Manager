@@ -317,8 +317,7 @@ class Search_():
             print(text1)
             speak(text1)
 
-            print('continue your search by pressing enter, but if you want to exit press "/"\n')
-            
+            print('continue your search by pressing enter, but if you want to exit press "/"\n')            
             speak("you want to continue you search in wikipedia or exit the wikipedia")
             forward_ = atul_speak().lower()
             if 'exit' in forward_:
