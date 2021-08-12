@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-version - VirtualManager-0.0.2
+version - VirtualManager-0.0.3
 
 You all are not supposed to use it somewhere else on your name
 but you can copy the code and use it on your system and commit changes in program according to your need
