@@ -17,6 +17,7 @@ import feedparser
 import webbrowser
 import sys
 import time
+import pyautogui
 
 
 # logo
@@ -203,6 +204,9 @@ def commands():
                 speak("try again")
         elif 'remember' in atul_lis:
             rem()
+        elif 'screenshot' in atul_lis:
+            print('taking a screenshot________')
+            scrsh()
         else:
             chat_talk(atul_speak())
             continue
@@ -218,6 +222,13 @@ def rem():
     f.write(tex)
     f.close()
     speak("text saved")
+
+def scrsh():
+    time.sleep(0.5)
+    s = pyautogui.screenshot()
+    s.save("scst_VM.png")
+    text = 'screenshot saved'
+    speak(text)
 
 #algo of show news content
 def ne():
@@ -317,7 +328,8 @@ class Search_():
             print(text1)
             speak(text1)
 
-            print('continue your search by pressing enter, but if you want to exit press "/"\n')            
+            print('continue your search by pressing enter, but if you want to exit press "/"\n')
+            
             speak("you want to continue you search in wikipedia or exit the wikipedia")
             forward_ = atul_speak().lower()
             if 'exit' in forward_:
