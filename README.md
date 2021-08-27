@@ -10,7 +10,7 @@ Inside your terminal type this after selecting desired location where you had sa
 $ python3 VM.py
 
 
-Version -- 0.0.4
+Version -- 0.0.5
 
 Some commands on which it works-
 
@@ -51,6 +51,8 @@ Some commands on which it works-
 'disable wifi' | it will automatically disable wifi
 
 'remember my words' | it will save your given words in remember.txt file that you can see in future, the fill will be present where you had save the program [in project folder]
+
+'take a screenshot' | it will take a screenshot and will save it in a same directory 
 
 'please be silent' | it will stop taking voice commands to avoid disturbance in your work, press enter continue
 
