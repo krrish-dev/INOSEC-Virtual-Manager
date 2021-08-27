@@ -3,6 +3,11 @@ Open the terminal download the following python library||
 It is necessary to download otherwise program will not work
 
 
+$ pip install pyautogui
+
+[If you are on Linux you have to download tkinter to use this library]
+
+
 $ pip install webbrowser
 
 
