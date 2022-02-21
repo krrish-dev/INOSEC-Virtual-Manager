@@ -4,7 +4,7 @@
 # from stackoverflow or form github,
 # Coperate with us. THANK YOU
 
-# Written by a Indian Developer - username on GitHub: @krrish-dev #
+# Written by a Indian Developer - username on GitHub: @krrish-v #
 
 # implementing modules
 from chatterbot import ChatBot
